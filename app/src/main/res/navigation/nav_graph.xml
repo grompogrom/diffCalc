@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/equationTypesListFragment">
+
+    <fragment
+        android:id="@+id/equationTypesListFragment"
+        android:name="com.pogrom.difffragments.fragments.EquationTypesListFragment"
+        android:label="fragment_equation_types_list"
+        tools:layout="@layout/fragment_equation_types_list" >
+        <action
+            android:id="@+id/action_equationTypesListFragment_to_calculationsFragment"
+            app:destination="@id/calculationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculationsFragment"
+        android:name="com.pogrom.difffragments.fragments.CalculationsFragment"
+        android:label="CalculationsFragment"
+        tools:layout="@layout/fragment_calculations"/>
+</navigation>
